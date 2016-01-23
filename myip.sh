@@ -7,6 +7,7 @@ if [ $? -eq 0 ]
  then
  HOST="myip.opendns.com"
  DNS="resolver1.opendns.com"
+ echo -n "Your public ip is:"
  $DIG +short $HOST @$DNS
  else
   echo "dig is not installed,or not in the PATH"
